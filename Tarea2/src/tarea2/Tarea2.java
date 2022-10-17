@@ -200,3 +200,49 @@ class Moneda100 extends Moneda{
     
 }
 
+
+//Ojo: no sé si usar RunTimeException o Exception
+//NoHayBebida
+public class NoHayBebidaException extends RuntimeException {
+    public NoHayBebidaException(String errorMessage) {
+        super(errorMessage);
+
+    }
+
+}
+public void myMethod() throws NoHayBebidaException{
+     if (//falta la condición){
+     throw new NoHayBebidaException(" Nombre de archivo incorrecto : " + NombreArchivo );
+
+}
+
+
+//PagoInsuficienteException
+public class PagoInsuficienteException extends RuntimeException {
+    public PagoInsuficienteException(String errorMessage) {
+        super(errorMessage);
+
+    }
+
+}
+public void myMethod() throws PagoInsuficienteException{
+     if (//falta la condición){
+     throw new PagoInsuficienteException(" Nombre de archivo incorrecto : " + NombreArchivo );
+
+}
+
+
+//PagoIncorrectoException
+public class PagoIncorrectoException extends RuntimeException {
+    public PagoIncorrectoException(String errorMessage) {
+        super(errorMessage);
+
+    }
+
+}
+public void myMethod() throws PagoIncorrectoException{
+     if (//falta la condición){
+     throw new PagoIncorrectoException(" Nombre de archivo incorrecto : " + NombreArchivo );
+
+}
+
