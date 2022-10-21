@@ -51,7 +51,7 @@ class Expendedor{
     public Bebida comprarBebida(Moneda m, int cual){
         Pago=m;
         if(Pago.getValor()>prezio){
-            cualkier=prezio-Pago.getValor();
+            cualkier=Pago.getValor()-prezio;
             switch(cual){
                 case 1: return coca.getBebida();
                 case 2: return sprite.getBebida();
@@ -243,4 +243,9 @@ public void myMethod() throws PagoIncorrectoException{
      if (//falta la condición){
      throw new PagoIncorrectoException(" Nombre de archivo incorrecto : " + NombreArchivo );
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> b6e418ea903a5d85ea563b8a35b04911d9e88e2d
